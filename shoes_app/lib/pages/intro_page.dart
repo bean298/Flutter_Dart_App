@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:shoes_app/pages/home_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // Scaffold: khung cơ bản
     return Scaffold(
       backgroundColor: Colors.grey[300],
       body: Center(
@@ -45,10 +47,10 @@ class IntroPage extends StatelessWidget {
 
               // Start button
               GestureDetector(
-                // onTap: () => Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => HomePage()),
-                // ),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                ),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.grey[900],
