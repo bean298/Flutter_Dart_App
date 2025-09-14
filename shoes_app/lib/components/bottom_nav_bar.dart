@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class MyBottomNavBar extends StatelessWidget {
-  const MyBottomNavBar({super.key});
+  // Tham số sẽ là kiểu int, ko trả về gì
+  void Function(int)? onTabChange;
+
+  MyBottomNavBar({super.key, required this.onTabChange});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +18,10 @@ class MyBottomNavBar extends StatelessWidget {
         tabBackgroundColor: Colors.grey.shade100,
         mainAxisAlignment: MainAxisAlignment.center,
         tabBorderRadius: 16,
+        onTabChange: (value) => onTabChange!(value),
         tabs: const [
-          GButton(icon: Icons.home, text: "Shop"),
           GButton(icon: Icons.shopping_bag_rounded, text: "Cart"),
+          GButton(icon: Icons.home, text: "Shop"),
         ],
       ),
     );
