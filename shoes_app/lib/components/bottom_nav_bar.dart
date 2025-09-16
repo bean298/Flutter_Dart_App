@@ -20,8 +20,8 @@ class MyBottomNavBar extends StatelessWidget {
         tabBorderRadius: 16,
         onTabChange: (value) => onTabChange!(value),
         tabs: const [
-          GButton(icon: Icons.shopping_bag_rounded, text: "Cart"),
           GButton(icon: Icons.home, text: "Shop"),
+          GButton(icon: Icons.shopping_bag_rounded, text: "Cart"),
         ],
       ),
     );
