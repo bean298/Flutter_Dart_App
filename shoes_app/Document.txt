@@ -1,0 +1,13 @@
+Project làm về một ứng dụng có các chức năng như:
+    + Xem các sản phẩm về giày
+    + Thêm vào giỏ hàng
+    + Xoá khỏi giỏ hàng
+
+Ngôn ngữ lập trình: Flutter + Dart
+
+Dùng các model để định nghĩa kiểu dữ liệu và lưu trữ chúng.
+
+Cách chạy:
++ Cài đặt flutter và SDK.
+    -  Cách 1: Dùng máy ảo android studio
+    - Cách 2: Chạy trên thiết bị android thật
